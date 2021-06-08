@@ -1,6 +1,73 @@
 {
-  "Actor": {},
+  "Actor": {
+    "types":["heroes", "villain", "npc"],
+    "templates": {
+      "common": {
+        "attributes":{
+          "dex": {
+            "value": 6,
+          },
+          "ins": {
+            "value": 6,
+          },
+          "mig": {
+            "value": 6,
+          },
+          "wlp": {
+            "value": 6,
+          },
+        },
+        "resources":{
+            "HP":{
+              "value": 10,
+              "min": 0,
+              "max": 10
+            },
+            "MP":{
+              "value": 10,
+              "min": 0,
+              "max": 10
+            },
+            "defense":{
+              "value": 6
+            },
+            "mdefense":{
+              "value": 6
+            },
+            "initiativeMod":{
+              "value": 0
+            }
+          }
+        },
+      "relevantCharacters":{
+          "storyPoints": {
+            "name": "puntiFabula",
+            "value": 0
+          }
+        }
+      },
+    "npc":{
+      "templates":[ "common" ]
+    },
+    "villain":{
+      "templates":["common", "relevantCharacters"],
+      "storyPoints":{
+        "name": "puntiUltima"
+      }
+    },
+    "heroes":{
+      "templates":["common", "relevantCharacters"],
+      "exp":{
+        "value": 0
+      }
+      "level":{
+        "value": 5,
+        "min": 1,
+        "max": 50
+      },
+
+    }
+    }
+  },
   "Items":{},
 }
-
-/*weeee*/
