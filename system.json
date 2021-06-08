@@ -1,5 +1,30 @@
 {
-  "name":"FabulaU",
-  "title":"Fabula Ultima",
-  "description":"A system for playing Fabula Ultima games."
+  "name": "fabula-ultima",
+  "title": "Fabula Ultima",
+  "description": "System for Fabula Ultima",
+  "author": "insert name here",
+  "version": 0.01,
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "0.8.6",
+  "esmodules": [
+    "fu.js"
+  ],
+  "styles": [
+    "fu.css"
+  ],
+  "packs": [
+    
+  ],
+  "languages": [
+    
+  ],
+  "gridDistance": 5,
+  "gridUnits": ft,
+  "primaryTokenAttribute": "HP",
+  "secondaryTokenAttribute": "MP",
+  "initiative": 
+
+
+
+
 }
