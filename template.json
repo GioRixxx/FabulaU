@@ -59,7 +59,7 @@
       "templates":["common", "relevantCharacters"],
       "exp":{
         "value": 0
-      }
+      },
       "level":{
         "value": 5,
         "min": 1,
