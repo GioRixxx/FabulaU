@@ -69,5 +69,25 @@
     }
     }
   },
-  "Items":{},
+  "Items":{
+    "types": [
+      "spell",
+      "weapon"
+    ],
+   "templates":{
+     "itemDescription": {
+       "description": ""
+     }
+   },
+
+   "spell": {
+     "templates": [
+       "itemDescription"
+     ],
+     "roll": 0,
+     "damage": 0,
+     "target": 0,
+     "mana": 0,
+    },
+  },
 }
