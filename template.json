@@ -1,4 +1,11 @@
 {
   "Actor": {},
-  "Items":{},
+  "Items":{
+    "Spell": {
+      "roll":0,
+      "damage":0,
+      "target":0,
+      "mana":0,
+    }
+  },
 }
