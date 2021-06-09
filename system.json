@@ -3,7 +3,7 @@
   "title": "Fabula Ultima",
   "description": "System for Fabula Ultima",
   "author": "insert name here",
-  "version": 0.01,
+  "version": "0.01",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.6",
   "esmodules": [
