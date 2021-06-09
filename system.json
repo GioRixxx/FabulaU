@@ -1,5 +1,5 @@
 {
-  "name": "fabulaU",
+  "name": "fabula-ultima",
   "title": "Fabula Ultima",
   "description": "System for Fabula Ultima",
   "author": "insert name here",
@@ -7,21 +7,15 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.6",
   "esmodules": [
-    "fabulaU.js"
+    "fabula-ultima.js"
   ],
   "styles": [
-    "fabulaU.css"
+    "fabula-ultima.css"
   ],
   "packs": [
 
   ],
-  "languages": [
-    {
-    "lang": "en",
-    "name": "English",
-    "path": "lang/en.json",
-  }
-  ],
+
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "HP",

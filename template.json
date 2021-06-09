@@ -1,5 +1,5 @@
 {
-  "Actor": {
+  "actor": {
     "types":["heroes", "villain", "npc"],
     "templates": {
       "common": {
