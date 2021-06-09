@@ -73,14 +73,14 @@
     "types": [
       "spell",
       "weapon"
-    ]
+    ],
     "templates": {
      "itemDescription": {
        "description": ""
      },
      "offensiveStats": {
        "roll": 0,
-       "damage"; 0,
+       "damage": 0,
        "target": 0
      }
    },
@@ -92,11 +92,7 @@
      "mana": 0
    },
     "weapon": {
-<<<<<<< HEAD
      "templates": ["itemDescription", "offensiveStats"],
-=======
-     "templates":["itemDescription", "offensiveStats"],
->>>>>>> 0783902588c908fb9bc86841a2f1b4a68e51a001
      "price": 0
    }
   }
