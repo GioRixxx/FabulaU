@@ -1,5 +1,5 @@
 {
-  "name": "FabulaU",
+  "name": "fabulaU",
   "title": "Fabula Ultima",
   "description": "System for Fabula Ultima",
   "author": "insert name here",
@@ -7,10 +7,10 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.6",
   "esmodules": [
-    "fu.js"
+    "fabulaU.js"
   ],
   "styles": [
-    "fu.css"
+    "fabulaU.css"
   ],
   "packs": [
 
