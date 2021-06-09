@@ -3,7 +3,7 @@
     "types":["heroes", "villain", "npc"],
     "templates": {
       "common": {
-        "attributes":{
+        "attributes": {
           "dex": {
             "value": 6,
           },
@@ -17,50 +17,50 @@
             "value": 6,
           },
         },
-        "resources":{
-            "HP":{
+        "resources": {
+            "HP": {
               "value": 10,
               "min": 0,
               "max": 10
             },
-            "MP":{
+            "MP": {
               "value": 10,
               "min": 0,
               "max": 10
             },
-            "defense":{
+            "defense": {
               "value": 6
             },
-            "mdefense":{
+            "mdefense": {
               "value": 6
             },
-            "initiativeMod":{
+            "initiativeMod": {
               "value": 0
             }
           }
         },
-      "relevantCharacters":{
+      "relevantCharacters": {
           "storyPoints": {
             "name": "puntiFabula",
             "value": 0
           }
         }
       },
-    "npc":{
+    "npc": {
       "templates":[ "common" ]
     },
-    "villain":{
+    "villain": {
       "templates":["common", "relevantCharacters"],
-      "storyPoints":{
+      "storyPoints": {
         "name": "puntiUltima"
       }
     },
-    "heroes":{
+    "heroes": {
       "templates":["common", "relevantCharacters"],
-      "exp":{
+      "exp": {
         "value": 0
       },
-      "level":{
+      "level": {
         "value": 5,
         "min": 1,
         "max": 50
@@ -69,12 +69,12 @@
     }
   },
 
-  "Item":{
+  "Item": {
     "types": [
       "spell",
       "weapon"
-    ],
-   "templates":{
+    ]
+    "templates": {
      "itemDescription": {
        "description": ""
      },
@@ -84,14 +84,14 @@
        "target": 0
      }
    },
-   "spell": {
+    "spell": {
      "templates": [
        "itemDescription",
        "offensiveStats"
      ],
      "mana": 0
    },
-   "weapon":{
+    "weapon": {
      "templates":["itemDescription", "offensiveStats"],
      "price": 0
    }
