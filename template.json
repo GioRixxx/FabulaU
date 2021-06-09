@@ -1,5 +1,5 @@
 {
-  "actor": {
+  "Actor": {
     "types":["heroes", "villain", "npc"],
     "templates": {
       "common": {
@@ -77,17 +77,24 @@
    "templates":{
      "itemDescription": {
        "description": ""
+     },
+     "offensiveStats": {
+       "roll": 0,
+       "damage"; 0,
+       "target": 0,
      }
    },
 
    "spell": {
      "templates": [
-       "itemDescription"
+       "itemDescription",
+       "offensiveStats"
      ],
-     "roll": 0,
-     "damage": 0,
-     "target": 0,
      "mana": 0,
-    }
+   },
+   "weapon":{
+     "templates":["itemDescription", "offensiveStats"],
+     "price": 0
+   }
   }
 }
