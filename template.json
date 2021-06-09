@@ -81,16 +81,15 @@
      "offensiveStats": {
        "roll": 0,
        "damage"; 0,
-       "target": 0,
+       "target": 0
      }
    },
-
    "spell": {
      "templates": [
        "itemDescription",
        "offensiveStats"
      ],
-     "mana": 0,
+     "mana": 0
    },
    "weapon":{
      "templates":["itemDescription", "offensiveStats"],
