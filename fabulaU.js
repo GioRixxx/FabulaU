@@ -1,7 +1,7 @@
-import FUItemSheet from "./module/sheets/FUItemSheet.js";
+import FUItemSheet from "./module/sheets/item-sheet.js";
 Hook.once("init", function() {
-  console.log("FabulaU | Initializing Fabula Ultima");
+  console.log("fabula-ultima | Initializing Fabula Ultima");
 
   Items.unregisterSheet("core", ItemSheet)
-  Items.registerSheet("FabulaU", "FUItemSheet", {makeDefault: true })
+  Items.registerSheet("fabula-ultima", "item-sheet", {makeDefault: true })
 });
