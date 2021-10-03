@@ -1,4 +1,5 @@
 import FUItemSheet from "./module/sheets/FUItemSheet.js";
+import {}
 
 Hooks.once("init", function () {
   console.log("fabula-ultima | Initializing Fabula Ultima");
