@@ -25,6 +25,6 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "HP",
   "secondaryTokenAttribute": "MP",
-  "initiative": "1d6"
-
+  "url": "https://github.com/GioRixxx/FabulaU",
+  "manifest": "https://github.com/GioRixxx/FabulaU/blob/main/system.json"
 }
