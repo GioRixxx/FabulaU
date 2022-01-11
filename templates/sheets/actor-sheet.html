@@ -1,0 +1,283 @@
+<form class="flexcol {{cssClass}}" autocomplete="off">
+
+    {{!-- Sheet Header --}}
+    
+    <header class="sheet-header">  
+       
+        <div text-align="center">
+            <div style="float:right;position:relative;height:0px;"><div class="lv-box">
+                LIVELLO
+                <span style="font-size:40px">5</span>
+            </div></div>
+            <div style="float:left;position:relative;height:0px;"><button class="roll-box">
+                FREE <br>
+                ROLL
+
+            </button></div>
+            <h1 class="charname">
+                <input name="name" type="text" value="{{actor.name}}" placeholder="Name" /> 
+            </h1>
+        </div>
+        <div>
+            <h1 class="charname2">
+                <input name="identity" type="text" value="{{actor.identity}}" placeholder="Identity" />
+            </h1>
+        </div>
+        
+        {{! colonna sinistra: parametri}}
+        <div class="sheet-column">
+
+            <div class="stat-box" style="margin-top:2px;">
+                <h1>DESTREZZA</h1>
+                <button class="buttonplusdx">+</button>
+                <button class="buttonminusdx">-</button>
+                <br><br><br>
+                <h3><span style="font-size:15px">D</span>8
+                    <span style="font-size:15px">BASE</span></h3>
+                       
+                    <img class="sheetdie" src="systems\worldbuilding\templates\d10bg.png" title="dadodestrezza">
+               
+                <div class="main-stat">10</div>
+
+
+
+            </div>
+
+            <div class="stat-box">
+                <h1>INTELLETTO</h1>
+                
+                <button class="buttonplusdx">+</button>
+                <button class="buttonminusdx">-</button>
+
+                <br><br><br>
+                <h3><span style="font-size:15px">D</span>8
+                    <span style="font-size:15px">BASE</span></h3>
+
+                    <img class="sheetdie" src="systems\worldbuilding\templates\d8bg.png" title="dadointelletto">
+
+                <div class="main-stat">8</div>
+            </div>
+            
+            <div class="stat-box">
+                <h1> VIGORE</h1>
+                
+                <button class="buttonplusdx">+</button>
+                <button class="buttonminusdx">-</button>
+
+                <br><br><br>
+                <h3><span style="font-size:15px">D</span>8
+                    <span style="font-size:15px">BASE</span></h3>
+
+                    <img class="sheetdie" src="systems\worldbuilding\templates\d12bg.png" title="dadovigore">
+
+                    <div class="main-stat">12</div>
+            </div>
+            <div class="stat-box">
+                <h1>VOLONTA'</h1>
+                
+                <button class="buttonplusdx">+</button>
+                <button class="buttonminusdx">-</button>
+
+                <br><br><br>
+                <h3><span style="font-size:15px">D</span>8
+                    <span style="font-size:15px">BASE</span></h3>
+
+                    <img class="sheetdie" src="systems\worldbuilding\templates\d6bg.png" title="dadodvolonta">
+
+                    <div class="main-stat">6</div>
+            </div>
+        </div>
+
+        {{! colonna centrale: immagine}}
+        <div class="sheet-column">
+            
+            <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="250" width="250" />
+            
+                <div class="resource">
+                
+                    HP
+                    <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number" class="inputresource"/>
+                    /
+                    <input type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number" class="inputresource"/>
+                
+                   
+
+                 </div>
+
+                <div id="healthbar">
+                    <div></div>
+                </div>
+           
+
+            <div class="resource" style="margin-top:-5px; height:5px">
+                MP
+                <input type="text" name="data.power.value" value="{{data.power.value}}" data-dtype="Number" class="inputresource"/>
+                <span> / </span>
+                <input type="text" name="data.power.max" value="{{data.power.max}}" data-dtype="Number" class="inputresource"/>
+            </div>
+            <div id="manabar">
+                <div></div>
+            </div>
+            
+        </div>
+        
+        {{! colonna destra: statistiche}}
+        <div class="sheet-column">
+
+            <button class="stat-box3" style="margin-top:2px">
+                
+                <h1>Iniziativa</h1>                    
+                
+            </button>
+            <div class="defense-inputbox" style="margin-top:1px;">
+                <button class="buttonminusstat">-</button>
+                <input type="text" name="iniziativa" value="{{iniziativa}}" data-dtype="Number" class="inputresource inputresource2"/>
+                <button class="buttonplusstat">+</button>
+            </div>
+            <div class="defense-box" style="padding-top:3px;">
+                <h1>Punti Fabula</h1>
+            </div>
+            <div class="defense-inputbox">
+                <button class="buttonminusstat">-</button>
+                <input type="text" name="punti.fabula" value="{{punti.fabula}}" data-dtype="Number" class="inputresource inputresource2"/>
+                <button class="buttonplusstat">+</button>
+            </div>
+
+            <div class="defense-box" style="padding-top:3px;">
+                <h1>Punti Inventario</h1>
+            </div>
+            <div class="defense-inputbox">
+                <button class="buttonminusstat">-</button>
+                <input type="text" name="punti.inventario" value="{{punti.inventario}}" data-dtype="Number" class="inputresource inputresource2"/>
+                <button class="buttonplusstat">+</button>
+            </div>
+
+
+            <div class="stat-box5">
+                <input type="text" class="noteboard" placeholder="Note" name="note1" value="{{actor.note1}}">
+                </input>
+                <input type="text" class="noteboard" placeholder="Note" name="note2" value="{{actor.note2}}">
+                </input>
+                <input type="text" class="noteboard" placeholder="Note" name="note3" value="{{actor.note3}}">
+                </input>
+                <input type="text" class="noteboard" placeholder="Note" name="note4" value="{{actor.note4}}">
+                </input>
+            </div>
+
+            <div class="defense-box" style="padding-top:3px;">
+                <h1>Difesa Fisica</h1>
+            </div>
+            <div class="defense-inputbox">
+                <button class="buttonminusstat">-</button>
+                <input type="text" name="difesa.fisica" value="{{difesa.fisica}}" data-dtype="Number" class="inputresource inputresource2"/>
+                <button class="buttonplusstat">+</button>
+            </div>
+
+            <div class="defense-box" style="padding-top:3px;">
+                <h1>Difesa Magica</h1>
+            </div>
+            <div class="defense-inputbox">
+                <button class="buttonminusstat">-</button>
+                <input type="text" name="difesa.magica" value="{{difesa.magica}}" data-dtype="Number" class="inputresource inputresource2"/>
+                <button class="buttonplusstat">+</button>
+            </div>
+            
+            
+        </div>
+
+        
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary" style="border:none;margin-top:2px">
+        <a class="item" data-tab="description">Tratti e Legami</a>
+        <a class="item" data-tab="items1">Equipaggiamento</a>
+        <a class="item" data-tab="items2">Inventario</a>
+        <a class="item" data-tab="items3">Classi e Capacità</a>
+        <a class="item" data-tab="attributes">Attributes</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Biography Tab --}}
+        <div class="tab biography" data-group="primary" data-tab="description">
+            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Owned Items Tab --}}
+        <div class="tab items" data-group="primary" data-tab="items">
+            <ol class="item-list">
+                {{#each actor.items as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <img src="{{item.img}}" title="{{item.name}}" width="24" height="24" />
+                    <h4 class="item-name">{{item.name}}</h4>
+                    {{!-- Iterate through all attributes on the item and output buttons for any that are formula. --}}
+                    <div class="item-buttons">
+                        {{#each item.data.attributes as |itemAttr key|}}
+                        {{#if itemAttr.dtype}}
+                            {{#if itemAttr.isFormula}}
+                                {{!-- Use the items.name.key format for shorthand. --}}
+                                {{#if ../../shorthand}}
+                                <button class="item-button rollable" data-roll="@items.{{slugify item.name}}.{{key}}" data-label="{{ itemAttr.label }}"
+                                    title="{{itemAttr.value}}">{{itemAttr.label}}</button>
+                                {{!-- Use the items.name.attributes.key.value format otherwise. --}}
+                                {{else}}
+                                <button class="item-button rollable"
+                                    data-roll="@items.{{slugify item.name}}.attributes.{{key}}.value" data-label="{{ itemAttr.label }}"
+                                    title="{{itemAttr.value}}">{{itemAttr.label}}</button>
+                                {{/if}}
+                            {{/if}}
+                        {{else}}
+                            {{#each itemAttr as |itemGroupedAttr groupedKey|}}
+                                {{#if itemGroupedAttr.isFormula}}
+                                    {{!-- Use the items.name.key format for shorthand. --}}
+                                    {{#if ../../../shorthand}}
+                                    <button class="item-button rollable" data-roll="@items.{{slugify item.name}}.{{key}}.{{groupedKey}}" data-label="{{ itemGroupedAttr.label }}"
+                                        title="{{itemGroupedAttr.value}}">{{itemGroupedAttr.label}}</button>
+                                    {{!-- Use the items.name.attributes.key.value format otherwise. --}}
+                                    {{else}}
+                                    <button class="item-button rollable"
+                                        data-roll="@items.{{slugify item.name}}.attributes.{{key}}.{{groupedKey}}.value" data-label="{{ itemGroupedAttr.label }}"
+                                        title="{{itemGroupedAttr.value}}">{{itemGroupedAttr.label}}</button>
+                                    {{/if}}
+                                {{/if}}
+                            {{/each}}
+                        {{/if}}
+                        {{/each}}
+                    </div>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <header class="attributes-header flexrow">
+                <span class="attribute-key">{{localize "SIMPLE.AttributeKey"}}</span>
+                <span class="attribute-value">{{localize "SIMPLE.AttributeValue"}}</span>
+                <span class="attribute-label">{{localize "SIMPLE.AttributeLabel"}}</span>
+                <span class="attribute-dtype">{{localize "SIMPLE.AttributeDtype"}}</span>
+                <a class="attribute-control" data-action="create" data-group="{{group}}"><i class="fas fa-plus"></i></a>
+            </header>
+
+            {{!-- Render the attribute list partial. --}}
+            {{> "systems/worldbuilding/templates/parts/sheet-attributes.html" attributes=data.ungroupedAttributes dtypes=dtypes}}
+
+            {{!-- Render the grouped attributes partial and control. --}}
+            <div class="groups">
+                {{> "systems/worldbuilding/templates/parts/sheet-groups.html" attributes=data.groupedAttributes groups=data.groups dtypes=dtypes}}
+
+                <div class="group-controls flexrow">
+                    <input class="group-prefix" type="text" val=""/>
+                    <a class="button group-control" data-action="create-group"><i class="fas fa-plus"></i>Add Attribute Group</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</form>
