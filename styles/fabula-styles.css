@@ -1,0 +1,748 @@
+.fabula {
+  /* Sheet Tabs */
+  /* Items List */
+  /* Attributes */
+
+}
+
+.fabula .window-content {
+  height: 100%;
+  padding: 5px;
+  padding-top: 0px;
+  
+}
+.fabula form {
+  height: 100%;
+  width:740px;
+}
+
+.fabula .sheet-header {
+  flex: 0 0 410px;
+  width: 730px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 0px;
+  overflow: hidden;
+ }
+
+.fabula .sheet-column {
+  float:left;
+  width: 240px;
+  padding:0px;
+}
+
+.fabula .sheet-header .profile-img {
+  flex: 0 0 240px;
+  height: 240px;
+  width: 240px;
+  border-radius: 15px;
+  border: 0px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  margin-top:5px;
+  
+}
+.fabula .sheet-header .header-fields {
+  flex: 1;
+  height: 100px;
+}
+.fabula .sheet-header h1.charname {
+  height: 40px;
+  width: 755px;
+  border: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin:0px;
+  
+}
+.fabula .sheet-header h1.charname input {
+  height: 100%;
+  margin:0px;
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+  border: none;
+  box-shadow:none;
+  margin-top:8px;
+  background:none;
+  
+}
+.fabula .sheet-header h1.charname2 {
+  height: 40px;
+  width: 755px;
+  border: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  margin:0px;
+  
+}
+.fabula .sheet-header h1.charname2 input {
+  height: 100%;
+  margin: 0;
+  line-height: 10px;
+  font-size: 24px;
+  color: rgb(233, 233, 233);
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 0px rgba(0, 0, 0, 0.4);
+  border: 0px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow:none;
+  background:none;
+
+  
+}
+
+.fabula .resource {
+  height: 0px;
+  float: center;
+  color: white;
+  text-align:center;
+  font-size: 18px;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.fabula .resource input {
+  width: 60px;
+  height: 28px;
+  box-shadow: none;
+  color: white;
+  text-shadow: 1px 1px 3px #000000;
+  background: none;
+  border: none;
+  margin-top:8px;
+}
+
+.fabula .inputresource2 { /* stile di punti fabula e punti inventario */
+text-align:center;
+color: white;
+text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+height:33px;
+border: none;
+width:40px;
+margin-left:-2px;
+background:none;
+font-size:22px;
+font-weight:bold;
+padding-top:3px;
+}
+
+
+.fabula .lv-box {
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-right:30px;
+  padding:5px;
+
+}
+.fabula .roll-box {
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-right:30px;
+  padding:5px;
+  background:none;
+  cursor: pointer;
+  line-height: 18px;
+  background-color:rgba(0, 0, 0, 0.05);
+
+}
+
+.roll-box:hover { box-shadow:none;}
+.roll-box:focus {box-shadow:none;border-style: inset;}
+
+
+.fabula .defense-box {
+  width: 158px;
+  height: 38px;
+  line-height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom:3px;
+
+}
+.fabula .defense-box>h1 {  
+  color:white;
+  float:left;
+  font-size: 19px;
+  padding:8px;
+  padding-left:10px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fabula .defense-inputbox {
+  width: 80px;
+  height: 38px;
+  line-height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  float:right;
+  margin-top:-42px;
+  margin-right:4px;
+  background-color:rgba(0, 0, 0, 0.05);
+  margin-bottom:2px;
+
+
+
+}
+
+
+
+.fabula .sheetshield {
+  opacity: 8%;
+  border:none;
+  position:absolute;
+  transform: scale(1.19);
+  margin-top:-11px;
+  margin-left:-26px;
+}
+
+.fabula .stat-box {
+  width: 240px;
+  height: 80px;
+  line-height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom:3px;
+}
+.fabula .stat-box>h1 {  /*usato per i nomi delle stat*/
+  color:white;
+  float:left;
+  font-size: 20px;
+  font-weight:bold;
+  padding:10px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fabula .main-stat { /*usato per i valori attuali delle stat*/
+  color:white;
+  font-size: 40px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+  padding-right:40px;
+  float:right;
+  margin-top: -10px;
+  font-weight:bold;
+  position:relative;
+  
+}
+
+.fabula .stat-box>h3 {   /* usato per i valori base delle stat*/
+  color:rgb(150, 150, 150);
+  float:left;
+  font-size: 30px;
+  padding-left:15px;
+  opacity:50%;
+}
+
+
+.fabula .stat-box2 {
+  width: 240px;
+  height: 160px;
+  line-height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom:3px;
+}
+.fabula .stat-box2>h1 {  /*usato per i nomi delle stat*/
+  color:white;
+  float:left;
+  font-size: 18px;
+  padding:10px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fabula .stat-box3 {    /*pulsante dell'iniziativa*/
+  width: 158px;
+  height: 38px;
+  line-height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom:3px;
+  cursor: pointer;
+  background-color:rgba(0, 0, 0, 0.05);
+  margin-left:0px;
+}
+.stat-box3:hover { box-shadow:none;}
+.stat-box3:focus {box-shadow:none;border-style: inset;}
+
+.fabula .stat-box3>h1 {  
+  color:white;
+  float:left;
+  font-size: 19px;
+  padding:8px;
+  padding-left:5px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fabula .stat-box4 {
+  width: 240px;
+  height: 38px;
+  line-height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom:3px;
+}
+
+.fabula .stat-box4>h1 {  
+  color:white;
+  float:left;
+  font-size: 18px;
+  padding:10px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fabula .stat-box5 {
+  width: 240px;
+  height: 120px;
+  line-height: 15px;
+  font-weight: bold;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+  margin-bottom:3px;
+  font-weight: normal;
+  color:white;
+  font-size: 18px;
+  padding:10px;
+  padding-top:5px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fabula .noteboard {
+  color:white;
+  width:220px;
+  float:left;
+  font-size: 18px;
+  padding:10px;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+  border:none;
+  background:none;
+}
+
+.fabula .sheet-tabs {
+  width:730px;
+  height:40px;
+
+}
+.fabula .sheetdie {
+  opacity: 7%;
+  border:none;
+  position:absolute;
+  transform: scale(1.19);
+  margin-top:-37px;
+  margin-left:25px;
+}
+
+.fabula .tabs {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center; 
+}
+
+.fabula .tabs .item {
+  width: 180px;
+  line-height: 35px;
+  font-weight: bold;
+  margin: 2px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.fabula .tabs :hover {
+  text-shadow:none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+}
+.fabula .tabs .item.active {
+  width: 180px;
+  text-align: center;
+  text-shadow: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px;
+
+  color:white;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 1px rgba(0, 0, 0, 1);
+}
+.fabula .sheet-body {
+  overflow-y: auto;
+  width:730px;
+}
+.fabula .sheet-body .tab {
+  height: 100%;
+
+}
+.fabula .editor,
+.fabula .editor-content {
+  height: 100%;
+}
+.fabula .item-list {
+  list-style: none;
+  margin: 7px 0;
+  padding: 0;
+  overflow-y: auto;
+}
+.fabula .item-list .item {
+  min-height: 30px;
+  line-height: 24px;
+  padding: 3px 0;
+  border-bottom: 1px solid #BBB;
+  align-items: stretch;
+}
+.fabula .item-list .item img {
+  flex: 0 0 24px;
+  margin-right: 5px;
+}
+.fabula .item-list .item-name {
+  margin: 0;
+}
+.fabula .item-list .item-controls {
+  flex: 0 0 36px;
+}
+.fabula .item-list .item-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  flex: 2;
+  justify-content: flex-start;
+}
+.fabula .item-list .item-button {
+  line-height: 1;
+  font-size: 11px;
+  flex: none;
+  width: auto;
+}
+.fabula .attributes {
+  position: relative;
+}
+.fabula .attributes .attribute-control,
+.fabula .attributes .group-control {
+  flex: 0 0 20px;
+  text-align: center;
+  line-height: 28px;
+  border: none;
+}
+.fabula .attributes .attribute-roll {
+  flex: 0 0 20px;
+  text-align: center;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fabula .attributes .group-prefix {
+  height: 31px;
+  margin-right: 10px;
+}
+.fabula .attributes .button {
+  width: 100%;
+  flex: 1;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px groove #f0f0e0;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 28px;
+  display: block;
+}
+.fabula .attributes .attribute-key {
+  background: transparent;
+  border: none;
+}
+.fabula .attributes-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 0 5px;
+  margin: 5px 0;
+  background: #cfcdc2;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  text-align: left;
+  font-weight: bold;
+}
+.fabula .attributes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fabula .attributes-list li > * {
+  margin: 0 3px;
+  height: 28px;
+  line-height: 24px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #AAA;
+}
+.fabula .attributes-list .attribute-col label {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1;
+}
+.fabula .attributes-list .attribute-col input {
+  font-size: 11px;
+  text-align: center;
+  line-height: 1;
+  height: 50%;
+}
+.fabula .attribute input[type="text"]::placeholder,
+.fabula .group-header input[type="text"]::placeholder {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  text-shadow: none;
+
+}
+.fabula .attribute input[type="text"]:focus::placeholder,
+.fabula .group-header input[type="text"]:focus::placeholder {
+  opacity: 1;
+  text-shadow: none;
+
+}
+.fabula .group-controls {
+  margin: 5px;
+}
+.fabula .groups-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fabula .group {
+  margin: 5px 0 0;
+  padding: 0;
+}
+.fabula .group-header {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+.fabula .group-key,
+.fabula .group-label {
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  background: transparent;
+  border-radius: 0;
+  margin-right: 6px;
+}
+.fabula .group-key {
+  opacity: 0.75;
+}
+.fabula .group-label {
+  flex: 2;
+}
+.fabula .group-dtype {
+  height: 24px;
+  flex: 0 0 116px;
+  margin: 0 5px;
+}
+.fabula.sheet.actor {
+  min-width: 560px;
+  min-height: 420px;
+}
+.fabula.sheet.item {
+  min-width: 460px;
+  min-height: 400px;
+}
+
+#manabar {
+  background-color: rgb(170, 170, 170);
+  border-radius: 20px;
+  box-shadow:3px 3px 5px rgba(0, 0, 0, 0.2) inset;
+  margin-right: 8px;
+  margin-left: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  margin-bottom:5px;
+}
+
+#manabar>div {
+  background-color: rgb(43, 49, 131);
+  width: 40%; /* cambia questa % in javascript */
+  height: 28px;
+  border-radius: 20px;
+  box-shadow:3px 3px 5px rgba(255, 255, 255, 0.2) inset;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-style: outset;
+  margin: 1px;
+}
+
+#healthbar {
+  background-color: rgb(170, 170, 170);
+  border-radius: 20px;
+  box-shadow:3px 3px 5px rgba(0, 0, 0, 0.2) inset;
+  margin:5px;
+  margin-right: 8px;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+
+}
+
+#healthbar>div {
+  background-color: rgb(177, 22, 22);
+  width: 60%;  /* cambia questa % in javascript */
+  height: 28px;
+  border-radius: 20px;
+  box-shadow:3px 3px 5px rgba(255, 255, 255, 0.2) inset;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-style: outset;
+  margin: 1px;
+}
+
+
+
+.buttonplusdx {
+  cursor: pointer;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 0px 10px 0px 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-align:center;
+  font-size: 16px;
+  font-weight:bold;
+  padding:2px;
+
+  float:right;
+  width:20px;
+  height: 40px;
+  margin: -2px;
+
+  background-color:rgba(0, 0, 0, 0.04);
+
+}
+.buttonplusdx:hover { box-shadow:none;}
+.buttonplusdx:focus {box-shadow:none;border-style: inset;}
+
+.buttonminusdx {
+  cursor: pointer;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 0px 0px 10px 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-align:center;
+  font-size: 16px;
+  font-weight:bold;
+  padding:2px;
+
+  float:right;
+  width:20px;
+  height: 40px;
+  margin: -2px;
+  margin-top:38px;
+  margin-right: -18px;
+
+  background-color:rgba(0, 0, 0, 0.04);
+}
+.buttonminusdx:hover { box-shadow:none;}
+.buttonminusdx:focus {box-shadow:none;border-style: inset;}
+
+
+
+.buttonplusstat {
+  cursor: pointer;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 0px 10px 10px 0px;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-align:center;
+  font-size: 16px;
+  font-weight:bold;
+  padding:2px;
+  width:20px;
+  height: 38px;
+  float:right;
+  margin-right:-2px;
+  margin-top:-2px;
+
+  background-color:rgba(0, 0, 0, 0.04);
+
+}
+.buttonplusstat:hover { box-shadow:none;}
+.buttonplusstat:focus {box-shadow:none;border-style: inset;}
+
+.buttonminusstat {
+  cursor: pointer;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-style: outset;
+  border-radius: 10px 0px 0px 10px;
+
+  color: rgba(255, 255, 255, 0.6);
+  text-align:center;
+  font-size: 16px;
+  font-weight:bold;
+  padding:2px;
+  float:left;
+
+  margin-left:-2px;
+  margin-top:-2px;
+  width:20px;
+  height: 38px;
+
+  background-color:rgba(0, 0, 0, 0.04);
+}
+.buttonminusstat:hover { box-shadow:none;}
+.buttonminusstat:focus {box-shadow:none;border-style: inset;}
